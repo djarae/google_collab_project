@@ -1,0 +1,3402 @@
+{
+  "analysis_date": "2025-11-27T22:00:48.718461",
+  "total_files_analyzed": 28,
+  "individual_file_analysis": {
+    "NAC_1990.csv": {
+      "file_name": "NAC_1990.csv",
+      "file_size_mb": 19.278486251831055,
+      "analysis_timestamp": "2025-11-27T21:51:34.248951",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 49 filas duplicadas exactas (0.02%)",
+        "Se encontraron 290038 duplicados en columnas clave (99.28%)"
+      ],
+      "metrics": {
+        "total_rows": 292145,
+        "total_columns": 27,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "TIPO_ATENC",
+          "LUGAR_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "CATEG_PA",
+          "EDAD_M",
+          "EST_CIV_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "CATEG_M",
+          "SERV_RES",
+          "REG_RES",
+          "COMUNA",
+          "URB_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL"
+        ],
+        "memory_usage_mb": 60.18014144897461,
+        "null_values": {
+          "total_nulls": 0,
+          "columns_with_nulls": {}
+        },
+        "data_types": {
+          "int64": 27
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 150001,
+              "2": 142144
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 286245,
+              "2": 4426,
+              "9": 1367,
+              "3": 88,
+              "4": 19
+            }
+          },
+          {
+            "column": "TIPO_ATENC",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 221840,
+              "1": 67727,
+              "3": 2578
+            }
+          }
+        ],
+        "row_hashes_created": 292145
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 49,
+          "percentage": 0.02
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 290038,
+          "percentage": 99.28
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 19
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1991.csv": {
+      "file_name": "NAC_1991.csv",
+      "file_size_mb": 20.3997163772583,
+      "analysis_timestamp": "2025-11-27T21:51:57.712459",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 29 filas duplicadas exactas (0.01%)",
+        "Se encontraron 282634 duplicados en columnas clave (99.35%)"
+      ],
+      "metrics": {
+        "total_rows": 284482,
+        "total_columns": 30,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "TIPO_ATENC",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "CONDACT_P",
+          "GRUPO_P",
+          "CATEG_P",
+          "EDAD_M",
+          "ECIV_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "CONDACT_M",
+          "GRUPO_M",
+          "CATEG_M",
+          "RES_SERV",
+          "RES_REG",
+          "COMUNA",
+          "AREA",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_NACM",
+          "HIJ_TOTAL"
+        ],
+        "memory_usage_mb": 65.11288833618164,
+        "null_values": {
+          "total_nulls": 0,
+          "columns_with_nulls": {}
+        },
+        "data_types": {
+          "int64": 30
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 145650,
+              "2": 138832
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 279273,
+              "2": 4638,
+              "9": 480,
+              "3": 75,
+              "4": 16
+            }
+          },
+          {
+            "column": "TIPO_ATENC",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 213287,
+              "1": 68798,
+              "3": 2397
+            }
+          }
+        ],
+        "row_hashes_created": 284482
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 29,
+          "percentage": 0.01
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 282634,
+          "percentage": 99.35
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1992.csv": {
+      "file_name": "NAC_1992.csv",
+      "file_size_mb": 20.542832374572754,
+      "analysis_timestamp": "2025-11-27T21:52:16.825679",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 65 filas duplicadas exactas (0.02%)",
+        "Se encontraron 277247 duplicados en columnas clave (99.35%)"
+      ],
+      "metrics": {
+        "total_rows": 279060,
+        "total_columns": 31,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "TIPO_ATENC",
+          "LUGAR_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "REG_RES",
+          "SERV_RES",
+          "COMUNA",
+          "URB_RURAL",
+          "EDAD_M",
+          "EST_CIV_M",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P"
+        ],
+        "memory_usage_mb": 99.53362655639648,
+        "null_values": {
+          "total_nulls": 1,
+          "columns_with_nulls": {
+            "MES_NAC": {
+              "count": 1,
+              "percentage": 0.0
+            }
+          }
+        },
+        "data_types": {
+          "int64": 27,
+          "object": 3,
+          "float64": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 142704,
+              "2": 136356
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 274147,
+              "2": 4428,
+              "9": 378,
+              "3": 91,
+              "4": 16
+            }
+          },
+          {
+            "column": "TIPO_ATENC",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 206426,
+              "1": 70532,
+              "3": 2102
+            }
+          }
+        ],
+        "row_hashes_created": 279060
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 65,
+          "percentage": 0.02
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 277247,
+          "percentage": 99.35
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1993.csv": {
+      "file_name": "NAC_1993.csv",
+      "file_size_mb": 20.303634643554688,
+      "analysis_timestamp": "2025-11-27T21:52:45.186860",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 7 filas duplicadas exactas (0.0%)",
+        "Se encontraron 274078 duplicados en columnas clave (99.37%)"
+      ],
+      "metrics": {
+        "total_rows": 275828,
+        "total_columns": 31,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "TIPO_ATENC",
+          "LUGAR_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "REG_RES",
+          "SERV_RES",
+          "COMUNA",
+          "URB_RURAL",
+          "EDAD_M",
+          "EST_CIV_M",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P"
+        ],
+        "memory_usage_mb": 87.3327522277832,
+        "null_values": {
+          "total_nulls": 0,
+          "columns_with_nulls": {}
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 2
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 141262,
+              "2": 134566
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 271013,
+              "2": 4397,
+              "9": 333,
+              "3": 62,
+              "4": 23
+            }
+          },
+          {
+            "column": "TIPO_ATENC",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 197835,
+              "1": 76318,
+              "3": 1675
+            }
+          }
+        ],
+        "row_hashes_created": 275828
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 7,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 274078,
+          "percentage": 99.37
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1994.csv": {
+      "file_name": "NAC_1994.csv",
+      "file_size_mb": 20.153621673583984,
+      "analysis_timestamp": "2025-11-27T21:53:13.978869",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 9 filas duplicadas exactas (0.0%)",
+        "Se encontraron 272054 duplicados en columnas clave (99.37%)"
+      ],
+      "metrics": {
+        "total_rows": 273775,
+        "total_columns": 31,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "TIPO_ATENC",
+          "LUGAR_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "REG_RES",
+          "SERV_RES",
+          "COMUNA",
+          "URB_RURAL",
+          "EDAD_M",
+          "EST_CIV_M",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P"
+        ],
+        "memory_usage_mb": 97.64860343933105,
+        "null_values": {
+          "total_nulls": 7,
+          "columns_with_nulls": {
+            "MES_NAC": {
+              "count": 7,
+              "percentage": 0.0
+            }
+          }
+        },
+        "data_types": {
+          "int64": 27,
+          "object": 3,
+          "float64": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 139752,
+              "2": 134023
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 269138,
+              "2": 4256,
+              "9": 257,
+              "3": 94,
+              "4": 30
+            }
+          },
+          {
+            "column": "TIPO_ATENC",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 191735,
+              "1": 80535,
+              "3": 1505
+            }
+          }
+        ],
+        "row_hashes_created": 273775
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 9,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 272054,
+          "percentage": 99.37
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 5
+        },
+        {
+          "type": "invalid_month",
+          "description": "Meses de nacimiento inválidos (< 1 o > 12)",
+          "count": 5
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1995.csv": {
+      "file_name": "NAC_1995.csv",
+      "file_size_mb": 19.57709503173828,
+      "analysis_timestamp": "2025-11-27T21:53:44.931121",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 6 filas duplicadas exactas (0.0%)",
+        "Se encontraron 264117 duplicados en columnas clave (99.32%)"
+      ],
+      "metrics": {
+        "total_rows": 265932,
+        "total_columns": 31,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "TIPO_ATENC",
+          "LUGAR_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "REG_RES",
+          "SERV_RES",
+          "COMUNA",
+          "URB_RURAL",
+          "EDAD_M",
+          "EST_CIV_M",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P"
+        ],
+        "memory_usage_mb": 94.8512077331543,
+        "null_values": {
+          "total_nulls": 0,
+          "columns_with_nulls": {}
+        },
+        "data_types": {
+          "int64": 28,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 135982,
+              "2": 129950
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 261027,
+              "2": 4372,
+              "9": 425,
+              "3": 97,
+              "4": 11
+            }
+          },
+          {
+            "column": "TIPO_ATENC",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 181310,
+              "1": 83412,
+              "3": 1210
+            }
+          }
+        ],
+        "row_hashes_created": 265932
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 6,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 264117,
+          "percentage": 99.32
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 28
+        },
+        {
+          "type": "invalid_month",
+          "description": "Meses de nacimiento inválidos (< 1 o > 12)",
+          "count": 27
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1996.csv": {
+      "file_name": "NAC_1996.csv",
+      "file_size_mb": 20.771523475646973,
+      "analysis_timestamp": "2025-11-27T21:53:59.548283",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 3 filas duplicadas exactas (0.0%)",
+        "Se encontraron 262991 duplicados en columnas clave (99.32%)",
+        "Columna 'ESTAB' tiene 99.58% de valores nulos"
+      ],
+      "metrics": {
+        "total_rows": 264793,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 91.95768165588379,
+        "null_values": {
+          "total_nulls": 263691,
+          "columns_with_nulls": {
+            "OCUPA_P": {
+              "count": 1,
+              "percentage": 0.0
+            },
+            "CATEG_P": {
+              "count": 4,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 263686,
+              "percentage": 99.58
+            }
+          }
+        },
+        "data_types": {
+          "int64": 28,
+          "object": 3,
+          "float64": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 135700,
+              "2": 129093
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 260103,
+              "2": 4156,
+              "9": 384,
+              "3": 115,
+              "4": 35
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 175349,
+              "1": 88428,
+              "3": 1016
+            }
+          }
+        ],
+        "row_hashes_created": 264793
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 3,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 262991,
+          "percentage": 99.32
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 7
+        },
+        {
+          "type": "invalid_month",
+          "description": "Meses de nacimiento inválidos (< 1 o > 12)",
+          "count": 7
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1997.csv": {
+      "file_name": "NAC_1997.csv",
+      "file_size_mb": 20.391793251037598,
+      "analysis_timestamp": "2025-11-27T21:54:09.423671",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 9 filas duplicadas exactas (0.0%)",
+        "Se encontraron 258217 duplicados en columnas clave (99.32%)",
+        "Columna 'ESTAB' tiene 99.62% de valores nulos"
+      ],
+      "metrics": {
+        "total_rows": 259995,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 90.28767013549805,
+        "null_values": {
+          "total_nulls": 259028,
+          "columns_with_nulls": {
+            "CATEG_P": {
+              "count": 10,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 259018,
+              "percentage": 99.62
+            }
+          }
+        },
+        "data_types": {
+          "int64": 28,
+          "object": 3,
+          "float64": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 133435,
+              "2": 126560
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 255345,
+              "2": 4149,
+              "9": 323,
+              "3": 131,
+              "4": 47
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 168699,
+              "1": 90351,
+              "3": 945
+            }
+          }
+        ],
+        "row_hashes_created": 259995
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 9,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 258217,
+          "percentage": 99.32
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 7
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1998.csv": {
+      "file_name": "NAC_1998.csv",
+      "file_size_mb": 20.165849685668945,
+      "analysis_timestamp": "2025-11-27T21:54:21.177925",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 10 filas duplicadas exactas (0.0%)",
+        "Se encontraron 255439 duplicados en columnas clave (99.34%)",
+        "Columna 'ESTAB' tiene 99.69% de valores nulos"
+      ],
+      "metrics": {
+        "total_rows": 257133,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 89.28815460205078,
+        "null_values": {
+          "total_nulls": 256340,
+          "columns_with_nulls": {
+            "CATEG_P": {
+              "count": 9,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 256331,
+              "percentage": 99.69
+            }
+          }
+        },
+        "data_types": {
+          "int64": 28,
+          "object": 3,
+          "float64": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 131247,
+              "2": 125886
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 252677,
+              "2": 4091,
+              "9": 204,
+              "3": 129,
+              "4": 32
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 165025,
+              "1": 91304,
+              "3": 804
+            }
+          }
+        ],
+        "row_hashes_created": 257133
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 10,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 255439,
+          "percentage": 99.34
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_1999.csv": {
+      "file_name": "NAC_1999.csv",
+      "file_size_mb": 19.65263843536377,
+      "analysis_timestamp": "2025-11-27T21:54:30.039770",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 12 filas duplicadas exactas (0.0%)",
+        "Se encontraron 248938 duplicados en columnas clave (99.33%)",
+        "Columna 'ESTAB' tiene 99.67% de valores nulos"
+      ],
+      "metrics": {
+        "total_rows": 250610,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 87.0243091583252,
+        "null_values": {
+          "total_nulls": 250036,
+          "columns_with_nulls": {
+            "OCUPA_P": {
+              "count": 5,
+              "percentage": 0.0
+            },
+            "CATEG_P": {
+              "count": 132,
+              "percentage": 0.05
+            },
+            "CATEG_M": {
+              "count": 109,
+              "percentage": 0.04
+            },
+            "ESTAB": {
+              "count": 249790,
+              "percentage": 99.67
+            }
+          }
+        },
+        "data_types": {
+          "int64": 27,
+          "object": 3,
+          "float64": 2
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 128223,
+              "2": 122387
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 246076,
+              "2": 4205,
+              "9": 153,
+              "3": 141,
+              "4": 35
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 161715,
+              "1": 88090,
+              "3": 805
+            }
+          }
+        ],
+        "row_hashes_created": 250610
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 12,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 248938,
+          "percentage": 99.33
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2000.csv": {
+      "file_name": "NAC_2000.csv",
+      "file_size_mb": 19.613831520080566,
+      "analysis_timestamp": "2025-11-27T21:54:38.787875",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 4 filas duplicadas exactas (0.0%)",
+        "Se encontraron 247317 duplicados en columnas clave (99.37%)",
+        "Columna 'ESTAB' tiene 97.70% de valores nulos"
+      ],
+      "metrics": {
+        "total_rows": 248893,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 66.68211936950684,
+        "null_values": {
+          "total_nulls": 243160,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 243160,
+              "percentage": 97.7
+            }
+          }
+        },
+        "data_types": {
+          "int64": 31,
+          "object": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 127763,
+              "2": 121130
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 244549,
+              "2": 4123,
+              "3": 128,
+              "9": 84,
+              "4": 9
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 164359,
+              "1": 83965,
+              "3": 569
+            }
+          }
+        ],
+        "row_hashes_created": 248893
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 4,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 247317,
+          "percentage": 99.37
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2001.csv": {
+      "file_name": "NAC_2001.csv",
+      "file_size_mb": 21.14250373840332,
+      "analysis_timestamp": "2025-11-27T21:54:47.400450",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 1 filas duplicadas exactas (0.0%)",
+        "Se encontraron 244551 duplicados en columnas clave (99.36%)",
+        "Columna 'ESTAB' tiene 66.94% de valores nulos"
+      ],
+      "metrics": {
+        "total_rows": 246116,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 88.57007312774658,
+        "null_values": {
+          "total_nulls": 164738,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 164738,
+              "percentage": 66.94
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 125335,
+              "2": 120781
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 241538,
+              "2": 4366,
+              "3": 117,
+              "9": 85,
+              "4": 10
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 162823,
+              "1": 82694,
+              "3": 599
+            }
+          }
+        ],
+        "row_hashes_created": 246116
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 1,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 244551,
+          "percentage": 99.36
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2002.csv": {
+      "file_name": "NAC_2002.csv",
+      "file_size_mb": 22.525424003601074,
+      "analysis_timestamp": "2025-11-27T21:55:00.429643",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 1 filas duplicadas exactas (0.0%)",
+        "Se encontraron 237363 duplicados en columnas clave (99.32%)"
+      ],
+      "metrics": {
+        "total_rows": 238981,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 90.4518690109253,
+        "null_values": {
+          "total_nulls": 40099,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 40099,
+              "percentage": 16.78
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 121975,
+              "2": 117006
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 234480,
+              "2": 4241,
+              "9": 138,
+              "3": 110,
+              "4": 12
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 159171,
+              "1": 79360,
+              "3": 450
+            }
+          }
+        ],
+        "row_hashes_created": 238981
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 1,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 237363,
+          "percentage": 99.32
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2003.csv": {
+      "file_name": "NAC_2003.csv",
+      "file_size_mb": 22.74598979949951,
+      "analysis_timestamp": "2025-11-27T21:55:18.852298",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 5 filas duplicadas exactas (0.0%)",
+        "Se encontraron 232747 duplicados en columnas clave (99.26%)"
+      ],
+      "metrics": {
+        "total_rows": 234486,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 90.13589096069336,
+        "null_values": {
+          "total_nulls": 5685,
+          "columns_with_nulls": {
+            "OCUPA_M": {
+              "count": 1,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 5684,
+              "percentage": 2.42
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 119963,
+              "2": 114523
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 229915,
+              "2": 4144,
+              "9": 304,
+              "3": 117,
+              "4": 6
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 3,
+            "top_5_values": {
+              "2": 154195,
+              "1": 79714,
+              "3": 577
+            }
+          }
+        ],
+        "row_hashes_created": 234486
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 5,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 232747,
+          "percentage": 99.26
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2004.csv": {
+      "file_name": "NAC_2004.csv",
+      "file_size_mb": 22.41319751739502,
+      "analysis_timestamp": "2025-11-27T21:55:38.311452",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 2 filas duplicadas exactas (0.0%)",
+        "Se encontraron 228546 duplicados en columnas clave (99.22%)"
+      ],
+      "metrics": {
+        "total_rows": 230352,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 88.7158203125,
+        "null_values": {
+          "total_nulls": 1660,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1660,
+              "percentage": 0.72
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 117434,
+              "2": 112918
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 225800,
+              "2": 4005,
+              "9": 438,
+              "3": 99,
+              "4": 10
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 145629,
+              "1": 84166,
+              "9": 437,
+              "3": 120
+            }
+          }
+        ],
+        "row_hashes_created": 230352
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 2,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 228546,
+          "percentage": 99.22
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2005.csv": {
+      "file_name": "NAC_2005.csv",
+      "file_size_mb": 22.449955940246582,
+      "analysis_timestamp": "2025-11-27T21:55:57.768748",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 5 filas duplicadas exactas (0.0%)",
+        "Se encontraron 229046 duplicados en columnas clave (99.23%)"
+      ],
+      "metrics": {
+        "total_rows": 230831,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 88.90619850158691,
+        "null_values": {
+          "total_nulls": 1659,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1659,
+              "percentage": 0.72
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 118534,
+              "2": 112297
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 226313,
+              "2": 4038,
+              "9": 380,
+              "3": 92,
+              "4": 8
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 145030,
+              "1": 85343,
+              "9": 382,
+              "3": 76
+            }
+          }
+        ],
+        "row_hashes_created": 230831
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 5,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 229046,
+          "percentage": 99.23
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2006.csv": {
+      "file_name": "NAC_2006.csv",
+      "file_size_mb": 22.477155685424805,
+      "analysis_timestamp": "2025-11-27T21:56:16.770490",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 4 filas duplicadas exactas (0.0%)",
+        "Se encontraron 229552 duplicados en columnas clave (99.21%)"
+      ],
+      "metrics": {
+        "total_rows": 231383,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 89.10710048675537,
+        "null_values": {
+          "total_nulls": 1639,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1639,
+              "percentage": 0.71
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 118203,
+              "2": 113180
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 226662,
+              "2": 4115,
+              "9": 479,
+              "3": 111,
+              "4": 16
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 141817,
+              "1": 88993,
+              "9": 479,
+              "3": 94
+            }
+          }
+        ],
+        "row_hashes_created": 231383
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 4,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 229552,
+          "percentage": 99.21
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 5
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2007.csv": {
+      "file_name": "NAC_2007.csv",
+      "file_size_mb": 23.360626220703125,
+      "analysis_timestamp": "2025-11-27T21:56:35.228336",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 6 filas duplicadas exactas (0.0%)",
+        "Se encontraron 238734 duplicados en columnas clave (99.24%)"
+      ],
+      "metrics": {
+        "total_rows": 240569,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 92.68336868286133,
+        "null_values": {
+          "total_nulls": 19235,
+          "columns_with_nulls": {
+            "REG_RES": {
+              "count": 8671,
+              "percentage": 3.6
+            },
+            "SERV_RES": {
+              "count": 8671,
+              "percentage": 3.6
+            },
+            "ESTAB": {
+              "count": 1893,
+              "percentage": 0.79
+            }
+          }
+        },
+        "data_types": {
+          "int64": 27,
+          "object": 3,
+          "float64": 2
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 122952,
+              "2": 117617
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 235591,
+              "2": 4355,
+              "9": 515,
+              "3": 104,
+              "4": 4
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 145793,
+              "1": 94137,
+              "9": 515,
+              "3": 124
+            }
+          }
+        ],
+        "row_hashes_created": 240569
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 6,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 238734,
+          "percentage": 99.24
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2008.csv": {
+      "file_name": "NAC_2008.csv",
+      "file_size_mb": 23.98857879638672,
+      "analysis_timestamp": "2025-11-27T21:56:57.000925",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 6 filas duplicadas exactas (0.0%)",
+        "Se encontraron 244921 duplicados en columnas clave (99.33%)"
+      ],
+      "metrics": {
+        "total_rows": 246581,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 95.03817749023438,
+        "null_values": {
+          "total_nulls": 1407,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1407,
+              "percentage": 0.57
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 125858,
+              "2": 120723
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 241684,
+              "2": 4595,
+              "9": 198,
+              "3": 94,
+              "4": 10
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 5,
+            "top_5_values": {
+              "2": 146461,
+              "1": 99725,
+              "9": 192,
+              "3": 191,
+              "4": 12
+            }
+          }
+        ],
+        "row_hashes_created": 246581
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 6,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 244921,
+          "percentage": 99.33
+        }
+      },
+      "anomalies": [
+        {
+          "type": "invalid_day",
+          "description": "Días de nacimiento inválidos (< 1 o > 31)",
+          "count": 1
+        }
+      ],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2009.csv": {
+      "file_name": "NAC_2009.csv",
+      "file_size_mb": 29.91497230529785,
+      "analysis_timestamp": "2025-11-27T21:57:16.072718",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 7 filas duplicadas exactas (0.0%)",
+        "Se encontraron 250400 duplicados en columnas clave (99.27%)"
+      ],
+      "metrics": {
+        "total_rows": 252240,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 102.6006965637207,
+        "null_values": {
+          "total_nulls": 1930,
+          "columns_with_nulls": {
+            "EDAD_P": {
+              "count": 2,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 1928,
+              "percentage": 0.76
+            }
+          }
+        },
+        "data_types": {
+          "int64": 28,
+          "object": 3,
+          "float64": 1
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 128659,
+              "2": 123581
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 246988,
+              "2": 4640,
+              "9": 480,
+              "3": 128,
+              "4": 4
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 5,
+            "top_5_values": {
+              "2": 149787,
+              "1": 101945,
+              "9": 376,
+              "3": 120,
+              "4": 12
+            }
+          }
+        ],
+        "row_hashes_created": 252240
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 7,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 250400,
+          "percentage": 99.27
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2010.csv": {
+      "file_name": "NAC_2010.csv",
+      "file_size_mb": 24.29758071899414,
+      "analysis_timestamp": "2025-11-27T21:57:37.237504",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 27 filas duplicadas exactas (0.01%)",
+        "Se encontraron 248830 duplicados en columnas clave (99.28%)"
+      ],
+      "metrics": {
+        "total_rows": 250643,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 96.4546594619751,
+        "null_values": {
+          "total_nulls": 5704,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 5704,
+              "percentage": 2.28
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 127682,
+              "2": 122961
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 245381,
+              "2": 4767,
+              "9": 374,
+              "3": 105,
+              "4": 16
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 5,
+            "top_5_values": {
+              "2": 147592,
+              "1": 102575,
+              "9": 312,
+              "3": 93,
+              "4": 71
+            }
+          }
+        ],
+        "row_hashes_created": 250643
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 27,
+          "percentage": 0.01
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 248830,
+          "percentage": 99.28
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2011.csv": {
+      "file_name": "NAC_2011.csv",
+      "file_size_mb": 24.03630256652832,
+      "analysis_timestamp": "2025-11-27T21:57:57.243039",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 20 filas duplicadas exactas (0.01%)",
+        "Se encontraron 245674 duplicados en columnas clave (99.32%)"
+      ],
+      "metrics": {
+        "total_rows": 247358,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 95.36695861816406,
+        "null_values": {
+          "total_nulls": 1001,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1001,
+              "percentage": 0.4
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 126555,
+              "2": 120803
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 242397,
+              "2": 4617,
+              "9": 226,
+              "3": 110,
+              "4": 8
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 141935,
+              "1": 105036,
+              "3": 254,
+              "9": 133
+            }
+          }
+        ],
+        "row_hashes_created": 247358
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 20,
+          "percentage": 0.01
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 245674,
+          "percentage": 99.32
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2012.csv": {
+      "file_name": "NAC_2012.csv",
+      "file_size_mb": 23.662277221679688,
+      "analysis_timestamp": "2025-11-27T21:58:15.155800",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 17 filas duplicadas exactas (0.01%)",
+        "Se encontraron 241806 duplicados en columnas clave (99.25%)"
+      ],
+      "metrics": {
+        "total_rows": 243635,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 93.9498872756958,
+        "null_values": {
+          "total_nulls": 1156,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1156,
+              "percentage": 0.47
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 2,
+            "top_5_values": {
+              "1": 124083,
+              "2": 119552
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 238381,
+              "2": 4722,
+              "9": 353,
+              "3": 135,
+              "4": 44
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 137213,
+              "1": 106018,
+              "9": 352,
+              "3": 52
+            }
+          }
+        ],
+        "row_hashes_created": 243635
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 17,
+          "percentage": 0.01
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 241806,
+          "percentage": 99.25
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2013.csv": {
+      "file_name": "NAC_2013.csv",
+      "file_size_mb": 23.474748611450195,
+      "analysis_timestamp": "2025-11-27T21:58:33.661092",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 11 filas duplicadas exactas (0.0%)",
+        "Se encontraron 240200 duplicados en columnas clave (99.25%)"
+      ],
+      "metrics": {
+        "total_rows": 242005,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 93.34733867645264,
+        "null_values": {
+          "total_nulls": 1408,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1408,
+              "percentage": 0.58
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 3,
+            "top_5_values": {
+              "1": 123402,
+              "2": 118585,
+              "9": 18
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 236750,
+              "2": 4753,
+              "9": 396,
+              "3": 86,
+              "4": 20
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 135920,
+              "1": 105638,
+              "9": 396,
+              "3": 51
+            }
+          }
+        ],
+        "row_hashes_created": 242005
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 11,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 240200,
+          "percentage": 99.25
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2014.csv": {
+      "file_name": "NAC_2014.csv",
+      "file_size_mb": 39.702857971191406,
+      "analysis_timestamp": "2025-11-27T21:58:52.686834",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 16 filas duplicadas exactas (0.01%)",
+        "Se encontraron 249138 duplicados en columnas clave (99.26%)"
+      ],
+      "metrics": {
+        "total_rows": 250997,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 96.82152557373047,
+        "null_values": {
+          "total_nulls": 1993,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 1993,
+              "percentage": 0.79
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 3
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 3,
+            "top_5_values": {
+              "1": 128177,
+              "2": 122802,
+              "9": 18
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 4,
+            "top_5_values": {
+              "1": 245334,
+              "2": 5061,
+              "9": 469,
+              "3": 133
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "2": 135008,
+              "1": 115367,
+              "9": 469,
+              "3": 153
+            }
+          }
+        ],
+        "row_hashes_created": 250997
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 16,
+          "percentage": 0.01
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 249138,
+          "percentage": 99.26
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2015.csv": {
+      "file_name": "NAC_2015.csv",
+      "file_size_mb": 23.766435623168945,
+      "analysis_timestamp": "2025-11-27T21:59:12.360489",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 28 filas duplicadas exactas (0.01%)",
+        "Se encontraron 242807 duplicados en columnas clave (99.24%)"
+      ],
+      "metrics": {
+        "total_rows": 244670,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 84.56724834442139,
+        "null_values": {
+          "total_nulls": 5262,
+          "columns_with_nulls": {
+            "OCUPA_M": {
+              "count": 2823,
+              "percentage": 1.15
+            },
+            "HIJ_FALL": {
+              "count": 2,
+              "percentage": 0.0
+            },
+            "HIJ_MORT": {
+              "count": 2,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 2435,
+              "percentage": 1.0
+            }
+          }
+        },
+        "data_types": {
+          "int64": 27,
+          "float64": 3,
+          "object": 2
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 3,
+            "top_5_values": {
+              "1": 124713,
+              "2": 119936,
+              "9": 21
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 4,
+            "top_5_values": {
+              "1": 238988,
+              "2": 5113,
+              "9": 456,
+              "3": 113
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "1": 124775,
+              "2": 119273,
+              "9": 456,
+              "3": 166
+            }
+          }
+        ],
+        "row_hashes_created": 244670
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 28,
+          "percentage": 0.01
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 242807,
+          "percentage": 99.24
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2016.csv": {
+      "file_name": "NAC_2016.csv",
+      "file_size_mb": 22.5340518951416,
+      "analysis_timestamp": "2025-11-27T21:59:31.586877",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 180 filas duplicadas exactas (0.08%)",
+        "Se encontraron 229864 duplicados en columnas clave (99.19%)"
+      ],
+      "metrics": {
+        "total_rows": 231749,
+        "total_columns": 32,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB"
+        ],
+        "memory_usage_mb": 89.41421127319336,
+        "null_values": {
+          "total_nulls": 2804,
+          "columns_with_nulls": {
+            "CURSO_P": {
+              "count": 1,
+              "percentage": 0.0
+            },
+            "NIVEL_P": {
+              "count": 1,
+              "percentage": 0.0
+            },
+            "ESTAB": {
+              "count": 2802,
+              "percentage": 1.21
+            }
+          }
+        },
+        "data_types": {
+          "int64": 27,
+          "object": 3,
+          "float64": 2
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 3,
+            "top_5_values": {
+              "1": 117801,
+              "2": 113920,
+              "9": 28
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 226174,
+              "2": 4951,
+              "9": 493,
+              "3": 118,
+              "4": 13
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "1": 118865,
+              "2": 112231,
+              "9": 493,
+              "3": 160
+            }
+          }
+        ],
+        "row_hashes_created": 231749
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 180,
+          "percentage": 0.08
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 229864,
+          "percentage": 99.19
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "latin-1",
+        "quotechar": "\""
+      }
+    },
+    "NAC_2017.csv": {
+      "file_name": "NAC_2017.csv",
+      "file_size_mb": 21.54826259613037,
+      "analysis_timestamp": "2025-11-27T21:59:51.831331",
+      "errors": [],
+      "warnings": [
+        "Se encontraron 5 filas duplicadas exactas (0.0%)",
+        "Se encontraron 217367 duplicados en columnas clave (99.17%)"
+      ],
+      "metrics": {
+        "total_rows": 219186,
+        "total_columns": 33,
+        "column_names": [
+          "SEXO",
+          "DIA_NAC",
+          "MES_NAC",
+          "ANO_NAC",
+          "TIPO_PARTO",
+          "ATENC_PART",
+          "LOCAL_PART",
+          "SEMANAS",
+          "PESO",
+          "TALLA",
+          "EDAD_P",
+          "CURSO_P",
+          "NIVEL_P",
+          "ACTIV_P",
+          "OCUPA_P",
+          "CATEG_P",
+          "EDAD_M",
+          "EST_CIVI_M",
+          "CURSO_M",
+          "NIVEL_M",
+          "ACTIV_M",
+          "OCUPA_M",
+          "CATEG_M",
+          "COMUNA",
+          "URBA_RURAL",
+          "HIJ_VIVOS",
+          "HIJ_FALL",
+          "HIJ_MORT",
+          "HIJ_TOTAL",
+          "REG_RES",
+          "SERV_RES",
+          "ESTAB",
+          "NAC_MA"
+        ],
+        "memory_usage_mb": 94.95788669586182,
+        "null_values": {
+          "total_nulls": 5889,
+          "columns_with_nulls": {
+            "ESTAB": {
+              "count": 5889,
+              "percentage": 2.69
+            }
+          }
+        },
+        "data_types": {
+          "int64": 29,
+          "object": 4
+        },
+        "consistency": [
+          {
+            "column": "SEXO",
+            "unique_values": 3,
+            "top_5_values": {
+              "1": 111660,
+              "2": 107501,
+              "9": 25
+            }
+          },
+          {
+            "column": "TIPO_PARTO",
+            "unique_values": 5,
+            "top_5_values": {
+              "1": 213579,
+              "2": 5124,
+              "9": 373,
+              "3": 106,
+              "4": 4
+            }
+          },
+          {
+            "column": "ATENC_PART",
+            "unique_values": 4,
+            "top_5_values": {
+              "1": 112933,
+              "2": 105713,
+              "9": 373,
+              "3": 167
+            }
+          }
+        ],
+        "row_hashes_created": 219186
+      },
+      "duplicates": {
+        "exact_duplicates": {
+          "count": 5,
+          "percentage": 0.0
+        },
+        "key_column_duplicates": {
+          "columns": [
+            "SEXO",
+            "DIA_NAC",
+            "MES_NAC",
+            "ANO_NAC",
+            "TIPO_PARTO"
+          ],
+          "count": 217367,
+          "percentage": 99.17
+        }
+      },
+      "anomalies": [],
+      "read_config": {
+        "sep": ";",
+        "encoding": "utf-8",
+        "quotechar": "\""
+      }
+    }
+  },
+  "cross_file_duplicates": {
+    "total_duplicate_groups": 0,
+    "sample_duplicates": {}
+  },
+  "summary": {
+    "total_records_analyzed": 7034428,
+    "total_exact_duplicates": 544,
+    "files_with_anomalies": 7,
+    "files_with_errors": 0,
+    "suspicious_files": [
+      {
+        "file": "NAC_2009.csv",
+        "size_mb": 29.91,
+        "rows": 252240
+      },
+      {
+        "file": "NAC_2014.csv",
+        "size_mb": 39.7,
+        "rows": 250997
+      }
+    ],
+    "average_file_size_mb": 22.67
+  }
+}
